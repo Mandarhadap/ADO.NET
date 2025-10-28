@@ -1,0 +1,19 @@
+Show all the Databases
+SELECT NAME AS DatabaseName from sys.databases;
+
+show all the tables
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE';
+
+create table Rno_Emp (EMPNO int primary key, ENAME varchar(50) not null, DEPTNO int, SAL decimal(10,2), COMM decimal(10,2));
+
+INSERT INTO Rno26_Emp  VALUES(101,'MANDAR',10,125000,20000),(102,'NAMAN',10,125000,20000);
+
+INSERT INTO Rno26_Emp  VALUES(103,'SAURABH',10,125000,20000),(104,'ANIRUDDHA',10,125000,20000);
+
+dotnet new console -n DemoApp -o DemoApp1
+
+dotnet add package Microsoft.Data.SqlClient
+
+
+
+
